@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center> 
+       
+        <h1>
+            nested if blocks
+        </h1>
+<!--> 
+          {% if a > 100 %}
+              <h2> i am in if block</h2>
+              <h2> {{a}} </h2>
+          {%  endif  %}
+         
+          {% if a > b %}
+                <h2>inside if block</h2>
+                <h2>{{a}}</h2>
+          {% else %}  
+                 <h2> i am in else block</h2>
+                 <h2>{{b}}</h2>  
+           {% endif %}  
+
+           {% if a > b and a > C %}
+                 <h2>if condition </h2>
+                 <h2> {{a}}</h2>
+           {% elif b < c %}  
+                 <h2>elif block</h2> 
+                 <h2>{{b}}</h2>  
+           {% else %} 
+                 <h2> inside else</h2>  
+                 <h2>{{c}}</h2>
+           {% endif %} 
+--> 
+
+
+
+
+
+
+{% if a > c %}
+    {% if a > c %}
+        <h1>a is max</h1>
+    {% else %}     
+        <h1> c is max </h1>
+{% endif %} 
+    {% if b > c %}
+        <h1> b is max</h1>
+    {% else %}     
+        <h1> c is max </h1>
+    {% endif %}      
+{% endif %} 
+
+            
+                 
+
+    </center>
+
+</body>
+</html>
